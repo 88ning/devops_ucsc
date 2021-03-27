@@ -6,12 +6,16 @@ This was a bit of a combo of docker and shell.
 
 Run these commands in terminal:
 
-njmuck@NJMUCK-MBP2:~/UCSC/devops/assignment1|⇒  docker pull centos
-njmuck@NJMUCK-MBP2:~/UCSC/devops/assignment1|⇒  docker run -dit cent
+njmuck@NJMUCK-MBP2:/UCSC/devops/assignment1|⇒  docker pull centos
+
+njmuck@NJMUCK-MBP2:/UCSC/devops/assignment1|⇒  docker run -dit cent
+
 
 My image were ba8c598aa373462c16cdf32f3641537a5e9eec1d44a69d9174a747ccd6c37ad1
 
-njmuck@NJMUCK-MBP2:~/UCSC/devops/assignment1|⇒  docker exec -it ba8c598aa373462c16cdf32f3641537a5e9eec1d44a69d9174a747ccd6c37ad1 /bin/bash
+
+njmuck@NJMUCK-MBP2:]/UCSC/devops/assignment1|⇒  docker exec -it ba8c598aa373462c16cdf32f3641537a5e9eec1d44a69d9174a747ccd6c37ad1 /bin/bash
+
 
 To create the file:
 [root@ba8c598aa373 /]# echo "filename=~/.hushlogin;if [ -f $filename ];then echo "File exists, All Good";else touch $filename && echo "File created"; fi" > checkhash.sh
