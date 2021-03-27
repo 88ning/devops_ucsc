@@ -100,5 +100,7 @@ We're here. :)
 To execute the scripts run these commands:
 
 Change directory to the scripts.
+
 To run check for .hushlogin,  type sh checkhash.sh
-Too get the kernal versiono, type type print-macos-kernal.sh 
+
+Too get the kernal version, type type print-macos-kernal.sh 
