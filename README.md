@@ -1,6 +1,50 @@
 # devops_ucsc
-Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
+Assignment 1
 
-Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
+a) Bash Script
+This was a bit of a combo of docker and shell.
 
-Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
+Run these commands in terminal:
+njmuck@NJMUCK-MBP2:~/UCSC/devops/assignment1|⇒  docker pull centos
+njmuck@NJMUCK-MBP2:~/UCSC/devops/assignment1|⇒  docker run -dit cent
+
+My image were ba8c598aa373462c16cdf32f3641537a5e9eec1d44a69d9174a747ccd6c37ad1
+
+njmuck@NJMUCK-MBP2:~/UCSC/devops/assignment1|⇒  docker exec -it ba8c598aa373462c16cdf32f3641537a5e9eec1d44a69d9174a747ccd6c37ad1 /bin/bash
+
+To create the file:
+[root@ba8c598aa373 /]# echo "filename=~/.hushlogin;if [ -f $filename ];then echo "File exists, All Good";else touch $filename && echo "File created"; fi" > checkhash.sh
+
+To give the file exec permissions:
+[root@ba8c598aa373 /]# chmod +x checkhash.sh
+
+[root@ba8c598aa373 /]# sh checkhash.sh
+File created
+
+Run it again:
+[root@ba8c598aa373 /]# sh checkhash.sh
+File exists, All Good
+
+b) MacOS
+This is a one-command script:
+sysctl kern.version
+
+
+c) Docker
+
+I intitally had some issues with authentication but figured it out.
+
+Run these command to pll the nginx official docker image, tag it to your namespace, push the image the docker hub.
+* docker image tag nginx urbanrobots/ucsc_devops_assignment1:nginx
+* docker push urbanrobots/ucsc_devops_assignment1:nginx
+
+Run this command to pull the image:
+docker pull urbanrobots/ucsc_devops_assignment1:nginx
+
+d) Oh-My-ZSH
+
+.
+
+e)  Create a Repo in Your Personal Github.com profile
+
+We're here. :)
