@@ -50,6 +50,7 @@ docker pull urbanrobots/ucsc_devops_assignment1:nginx
 
 ## d) Oh-My-ZSH
 Looks like quite a few!
+
 mvn=mvn-or-mvnw
 'mvn!'='mvn -f $(git rev-parse --show-toplevel 2>/dev/null || echo ".")/pom.xml'
 mvn-updates='mvn versions:display-dependency-updates'
