@@ -18,6 +18,7 @@ njmuck@NJMUCK-MBP2:]/UCSC/devops/assignment1|⇒  docker exec -it ba8c598aa37346
 
 
 To create the file:
+
 [root@ba8c598aa373 /]# echo "filename=~/.hushlogin;if [ -f $filename ];then echo "File exists, All Good";else touch $filename && echo "File created"; fi" > checkhash.sh
 
 To give the file exec permissions:
