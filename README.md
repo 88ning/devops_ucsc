@@ -85,10 +85,13 @@ mvntc7='mvn tomcat7:run'
 
 
 Commands were:
+
 brew install maven
+
 Then go edit the profiles in ~/.zshrc
+
 Finally open a new terminal window and run: alias
-.
+
 
 ## e)  Create a Repo in Your Personal Github.com profile
 
