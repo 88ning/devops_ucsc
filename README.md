@@ -7,6 +7,7 @@ This was a bit of a combo of docker and shell.
 Run these commands in terminal:
 
 njmuck@NJMUCK-MBP2:/UCSC/devops/assignment1|⇒  docker pull centos
+
 njmuck@NJMUCK-MBP2:/UCSC/devops/assignment1|⇒  docker run -dit cent
 
 
