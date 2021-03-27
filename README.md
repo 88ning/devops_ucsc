@@ -96,3 +96,9 @@ Finally open a new terminal window and run: alias
 ## e)  Create a Repo in Your Personal Github.com profile
 
 We're here. :)
+
+To execute the scripts run these commands:
+
+Change directory to the scripts.
+To run check for .hushlogin,  type sh checkhash.sh
+Too get the kernal versiono, type type print-macos-kernal.sh 
